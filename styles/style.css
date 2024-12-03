@@ -1,0 +1,657 @@
+body {
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1920px;
+    padding: 0 256px;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+:root {
+    --p_colour: #C8BB93;
+    --btn_padding: 10px 65px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    column-gap: 632px;
+    height: 64px;
+}
+
+.header_top-logo {
+    background: url('/icons/logos/Logo.svg')no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: 21px;
+}
+
+.nav {
+    display: flex;
+    column-gap: 124px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.nav_item {
+    line-height: 24px;
+    transition: all 3s;
+    color: #000;
+}
+
+.nav_item {
+    transition: all .2s;
+}
+
+.nav_item:hover {
+    color: var(--p_colour);
+}
+
+#distribution:hover .distribution-list {
+    display: flex;
+}
+
+.distribution-list {
+    display: none;
+    height: 64px;
+    width: 1920px;
+    margin: 0 auto;
+    padding-right: 256px;
+    padding-left: 616px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: right;
+    column-gap: 91px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.distribution-item {
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.distribution-item a {
+    transition: all .2s;
+}
+
+.distribution-item a:hover{
+    color: var(--p_colour);
+}
+
+.header__main {
+    background: url('/imgs/backgrounds/Image\ Plonq\ 500.png');
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+}
+
+.header__main__inner {
+    padding-top: 442px;
+    margin-bottom: 352px;
+    margin-left: 240px;
+    margin-right: 1035px;
+    color: #fff;
+}
+
+.plonq_500 {
+    background: url('/icons/logos/Logo\ Plonq\ 500.svg') no-repeat;
+    width: 335px;
+    height: 55px;
+    position: relative;
+    margin-bottom: 35px;
+    pointer-events: none;
+}
+
+.plonq_500::before {
+    content: '';
+    position: absolute;
+    background: url('/icons/New.svg');
+    width: 55px;
+    height: 17px;
+    left: -55px;
+    top: -17px;
+}
+
+.header__main__inner h2 {
+    width: 400px;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 300;
+    margin-bottom: 63px;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 90px;
+    align-items: center;
+}
+
+.buttons-a1 {
+    font-size: 15px;
+    line-height: 21px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 119px;
+    cursor: pointer;
+}
+
+.buttons-a1::after {
+    content: '';
+    background: url('/icons/Vector.svg') no-repeat;
+    width: 10px;
+    height: 10px;
+    background-position: center;
+    position: absolute;
+    right: -29px;
+}
+
+.buttons-button {
+    padding: var(--btn_padding);
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.buttons-button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.7s;
+}
+
+.buttons-button:active {
+    transform: scale(.95);
+    transition: .1s;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+.main {
+    margin: 0 auto;
+}
+
+.main__top {
+    display: flex;
+    align-items: center;
+    column-gap: 55px;
+    margin-left: 240px;
+    margin-top: 201px;
+    margin-bottom: 130px;
+}
+
+.plonq_x {
+    background: url('/icons/models/Plonq_X_logo.svg');
+    width: 280px;
+    height: 61px;
+    margin-bottom: 61px;
+}
+
+.buttons-a2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 119px;
+}
+
+.buttons-a2::after {
+    content: '';
+    background: url('/icons/Arrow.svg') no-repeat;
+    width: 10px;
+    height: 12px;
+    background-position: center;
+    position: absolute;
+    right: 0;
+}
+
+.main__top p{
+    color: var(--p_colour);
+    font-size: 15px;
+}
+
+.main__top-content h2{
+    font-weight: 300;
+    font-size: 32px;
+    width: 402px;
+    line-height: 44px;
+    min-height: 88px;
+    margin-bottom: 68px;
+}
+
+.main__top-img {
+    background: url('/imgs/gadgets/Image\ Plonq\ X.png');
+    width: 480px;
+    height: 660px;
+    pointer-events: none;
+}
+
+.main__products {
+    display: grid;
+    grid-template-rows: repeat(2, 450px);
+    row-gap: 243px;
+    margin-bottom: 272px;
+}
+
+.main__products-block {
+    display: flex;
+    column-gap: 180px;
+}
+
+#first-line {
+    margin-left: 240px;
+}
+#scnd-line {
+    margin-left: 120px;
+}
+.main__products-item {
+    display: flex;
+    align-items: center;
+    column-gap: 67px;
+}
+
+
+.main__products-img1 {
+    background: url('/imgs/products/image_Plonq_400.png') no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 452px;
+    pointer-events: none;
+}
+.main__products-img2 {
+    background: url('/imgs/products/image_Plonq_500.png') no-repeat;
+    background-position: center;
+    width: 145px;
+    height: 470px;
+    pointer-events: none;
+}
+.main__products-img3 {
+    background: url('/imgs/products/image_Plonq_X.png') no-repeat;
+    background-position: center;
+    width: 265px;
+    height: 450px;
+    pointer-events: none;
+}
+.main__products-img4 {
+    background: url('/imgs/products/image_Plonq_Pod.png') no-repeat;
+    background-position: center;
+    width: 145px;
+    height: 433px;
+    pointer-events: none;
+}
+
+.item__own-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__products-h1 {
+    margin-bottom: 55px;
+}
+
+#main__products-h1_1 {
+    background: url('/icons/models/logo_Plonq_400.svg') no-repeat;
+    width: 205px;
+    height: 35px;
+}
+#main__products-h1_2 {
+    background: url('/icons/models/logo_Plonq_500.svg') no-repeat;
+    width: 205px;
+    height: 35px;
+}
+#main__products-h1_3 {
+    background: url('/icons/models/logo_Plonq_X.svg') no-repeat;
+    width: 185px;
+    height: 40px;
+}
+#main__products-h1_4 {
+    background: url('/icons/models//logo_Plonq_X.svg') no-repeat;
+    width: 185px;
+    height: 40px;
+}
+
+.item__own-text p {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+}
+.with_price {
+    margin-bottom: 18px;
+}
+
+.without_price {
+    margin-bottom: 92px;
+}
+
+.main__products-price {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 800;
+    margin-bottom: 43px;
+}
+
+.buy-button {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 100px;
+    padding: var(--btn_padding);
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.buy-button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: .5s;
+}
+
+.buy-button:active {
+    transform: scale(.95);
+    transition: .1s
+}
+
+.item__own-text h2 {
+    color: var(--p_colour);
+    line-height: 21px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.main__map {
+    margin-bottom: 48px;
+    height: 687px;
+}
+
+.maps_wrapper {
+    text-align: center;
+    margin: 0 auto;
+    width: 1408px;
+    height: 455px;
+}
+
+#map {
+    width: 1408px;
+    height: 455px;
+    margin-bottom: 36px;
+    -webkit-filter: grayscale(100%);
+}
+
+.maps_wrapper h1 {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 36px;
+}
+
+.maps_wrapper button {
+    padding: var(--btn_padding);
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 24px;
+}
+
+.maps_wrapper button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.7s;
+}
+
+.maps_wrapper button:active {
+    transform: scale(.95);
+    transition: .5s;
+}
+
+
+.main__bottom {
+    margin: 0 auto 264px;
+}
+
+.main__bottom-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 304px;
+}
+
+.main__bottom-item {
+    display: flex;
+    align-items: center;
+    column-gap: 42px;
+}
+
+.bottom-item-text h1 {
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 400;
+    width: 197px;
+    margin-bottom: 28px;
+}
+
+.bottom-item-text p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+#bottom-item-p1{
+    margin-bottom: 43px;
+    width: 328px;
+}
+
+#bottom-item-p2{
+    width: 296px;
+    margin-bottom: 42px;
+}
+
+.main__bottom-item-img1 {
+    background: url('/imgs/gadgets/image_leak.png');
+    width: 78px;
+    height: 440px;
+    pointer-events: none;
+}
+.main__bottom-item-img2 {
+    background: url('/imgs/gadgets/image_APP.png');
+    width: 228px;
+    height: 394px;
+    pointer-events: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+.footer__top, .footer__subscribe, .footer__nav, .footer__nav-list, .footer__bottom {
+    display: flex;
+}
+
+.footer__top {
+    margin-bottom: 25px;
+    padding-top: 90px;
+    align-items: center;
+}
+
+.footer__top-logo {
+    background: url('/icons/logos/Logo.svg') no-repeat;
+    width: 100%;
+    height: 19px;
+    margin-right: 277px;
+}
+
+.footer__top h1 {
+    margin-right: 701px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.lang_chnger {
+    display: flex;
+    align-items: center;
+}
+
+#vert_line {
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+    margin: 0 6px;
+}
+
+.lang_chnger-item {
+    padding: 5px;
+    transition: all .3s;
+}
+
+.lang_chnger-item.active {
+    color: #C8BB93;
+}
+
+.footer__subscribe {
+    margin-bottom: 45px;
+    justify-content: center;
+}
+
+.subscribe input {
+    width: 424px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 24px;
+    transition: all .5s;
+    border: 1px solid #aaaaaa67;
+}
+
+.subscribe input:hover {
+    border: 1px solid #000;
+}
+
+#subscribe-button {
+    padding: 8px 32px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    font-size: 13px;
+    line-height: 24px;
+    border-radius: 4px;
+}
+
+#subscribe-button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all .5s;
+}
+
+#subscribe-button:active {
+    transform: scale(.95);
+    transition: all .1s;
+}
+
+.footer__nav {
+    margin-bottom: 87px;
+}
+
+.footer__nav-list {
+    column-gap: 89px;
+}
+
+/* ============================= */
+#footer-applications {
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+    margin-right: 121px;
+}
+
+.footer__ios {
+    background: url('/icons/apps/Apple_icon.svg') no-repeat;
+    width: 28px;
+    height: 33px;
+}
+
+.footer__android {
+    background: url('/icons/apps/Android_icon.svg') no-repeat;
+    width: 25px;
+    height: 33px;
+}
+
+.footer-applications-item {
+    display: flex;
+    column-gap: 14px;
+}
+
+.footer-applications-item h1 {
+    font-size: 14px;
+    line-height: 21px;
+    white-space: nowrap;
+}
+
+.footer-applications-item span {
+    color: #AAAAAA;
+}
+
+.footer__bottom {
+    padding-bottom: 58px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    line-height: 21px;
+    color: #AAAAAA;
+    font-size: 13px;
+    width: 1408px;
+}
+/* ============================= */
+
+.footer__nav-item h1 {
+    margin-bottom: 23px;
+}
+
+.item__list {
+    display: flex;
+    flex-direction: column;
+    color: #AAAAAA;
+    row-gap: 17px;
+}
+
+.footer__links {
+    line-height: 21px;
+    max-width: 160px;
+    font-size: 13px;
+}
+
+#footer-inst {
+    text-align: right;
+}
+
+#inst-logo {
+    background: url('/icons/apps/Instagram_icon.svg') no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 48px;
+}
+
+#footer-inst p{
+    width: 256px;
+    text-align: right;
+    font-size: 13px;
+    line-height: 21px;
+    color: #AAAAAA;
+}
